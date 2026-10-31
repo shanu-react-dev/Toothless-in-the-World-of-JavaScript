@@ -52,3 +52,6 @@ _Relational Opeartors are used to compare between two values. It will always ret
 3. **Assignment operator:** _These operators are used to assign values to the existing or new variables. Here we can perform the operation as well as assgin the updated values together._
 
 4. **Logical Operators:** _The logical operators are used to group two or more conditions together. If there are conditions it will always return one boolean value else it will return one value itself._
+5. **Unary Operators:** _Unary Operator is an operator which will perform the operations only on one operand. There are several Unary operators as follows._
+   - **Increment Operator:** _This is a unary operator which will help to increase the value by 1. it is having pre-increment operator where firs the operations will be performed and the value will be assigned. We have Post Increment operator where the value will be assigned first then it will be increased by 1._
+   - **Decrement Operator:** _This is also a unary operator and it helps to decrease the value by 1. Here we have pre-decrement where the value will be decreased first then it will be assigned. We have post-decrement also where the value will be assigned first then it will be decreased by 1._

@@ -96,13 +96,101 @@
 // console.log(num5 !== num6); // 10 not equals to 10 && number not equals to string
 // console.log(null == undefined);
 
-console.log(typeof "" == "string"); // true
-console.log(Number("") === 0); // true
-console.log(typeof ""); // string == string
-console.log(10 > 11n);
+// console.log(typeof "" == "string"); // true
+// console.log(Number("") === 0); // true
+// console.log(typeof ""); // string == string
+// console.log(10 > 11n);
 
-console.log(10 < 9 > 10); // false > 10 -> 0 >10 => false
-console.log(10 > 9 < 9); // 10>9<9 -> true < 9 -> 1 < 9 = > true
+// console.log(10 < 9 > 10); // false > 10 -> 0 >10 => false
+// console.log(10 > 9 < 9); // 10>9<9 -> true < 9 -> 1 < 9 = > true
 
 //! In Python the above programming will follow different approach
 //  (10 < 9 > 10) = > (10<9 && 9 > 10)
+
+//! Assignment Operator
+// let userName = "Shanu";
+// let num1;
+// num1 = 10;
+// num1 = num1 + 5; // 10 + 5 = 15
+// console.log(num1);
+// let num1 = 10;
+// let num2 = 5;
+// let result = num1 + num2; // 10 + 5
+// console.log(result); //15
+// console.log(num1);
+// console.log(num2);
+// num1 = num1 + num2; //10 + 5 = 15
+// num1 += num2;
+// console.log("Updated value of num1:", num1);
+
+// let num3 = 18;
+// let num4 = 24;
+// num3 = num3 - num4
+// num3 -= num4;
+// console.log(num3);
+// num4-=num3 // num4 = num4 - num3 = 24 - 18
+// console.log(num4)
+
+// num4 /= num3
+// console.log(num4)
+
+// num4 *= num3;
+// console.log(num4);
+
+// num4 %= num3;
+// console.log(num4);
+
+// num4 **= num3;
+// console.log(num4);
+
+//! Unary Operator
+// let a = 10;
+// console.log(a++); // 10 //! post increment
+// console.log(a);
+// console.log(++a); // 10 + 1=> 11 //! pre-increment
+// console.log(a);
+
+// let b = 19;
+// console.log(b--); // 19 //! post decrement
+// console.log(b); // 18
+
+// console.log(--b); //18 //! pre-decrement
+// console.log(b); //18
+
+// let num1 = 10;// 11, 12
+// let num2 = 5;// 4
+
+// let expr = num1++ + num2 - --num2 + ++num1; // 22, 17, 10, 23
+// // 10 + 5 - 4 + 12 = 23
+// console.log(expr);
+
+// let num1 = 20;
+// let num2 = 15;
+// let expr = (num1 % num2) + ++num1 - num2; //9, 11, 7
+// // 5 + 21 - 15 => 11
+// console.log(expr);
+
+//! Logical Operators in JS
+//? AND Operator
+// let a = 10;
+// let b = 20;
+// let res = a < b && b > a; // 10  < 20 && 20 > 10
+// console.log(res);
+// let res2 = a && b;
+// let res2 = b && a;
+// console.log(res2);
+
+//? OR
+// let res3 = a || b; // 10 || 20
+// console.log(res3);
+// let res4 = a > b || b < a;
+// console.log(res4);
+// console.log(null && undefined);
+// console.log(null || undefined);
+// console.log(null || undefined || 0 || false);
+
+//? NOT (!)
+let userName = "Shanu";
+console.log(!userName);
+let user2 = null;
+console.log(!user2);
