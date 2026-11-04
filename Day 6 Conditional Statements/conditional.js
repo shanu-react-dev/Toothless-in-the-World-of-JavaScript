@@ -37,7 +37,7 @@
 //   console.log("Dabba fellow! Trying to be smart! Enter valid age");
 // }
 
-let isLoggedIn = true;
+// let isLoggedIn = true;
 // if (isLoggedIn) {
 //   console.log("User is Logged In");
 // } else {
@@ -52,31 +52,126 @@ let isLoggedIn = true;
 // }
 
 //! nested if else
-let age = 18;
-if (age >= 18 && age <= 45) {
-  console.log("You are eligible by age! Will move for the nex part");
-  let fitnessTest = true;
-  if (fitnessTest) {
-    console.log("You are fit! Let's go to Sign/Symbol test");
-    let test = true;
-    if (test) {
-      console.log(
-        "You have cleared the test now will go for final driving test",
-      );
-      let knowHowToDrive = false;
-      if (knowHowToDrive) {
-        console.log("Your license will get delivered");
-      } else {
-        console.log(
-          "You have failed the driving test! Better luck next time...",
-        );
-      }
-    } else {
-      console.log("Sorry! you could not clear the test");
-    }
-  } else {
-    console.log("You are not physically fit!");
-  }
+// let age = 18;
+// if (age >= 18 && age <= 45) {
+//   console.log("You are eligible by age! Will move for the nex part");
+//   let fitnessTest = true;
+//   if (fitnessTest) {
+//     console.log("You are fit! Let's go to Sign/Symbol test");
+//     let test = true;
+//     if (test) {
+//       console.log(
+//         "You have cleared the test now will go for final driving test",
+//       );
+//       let knowHowToDrive = false;
+//       if (knowHowToDrive) {
+//         console.log("Your license will get delivered");
+//       } else {
+//         console.log(
+//           "You have failed the driving test! Better luck next time...",
+//         );
+//       }
+//     } else {
+//       console.log("Sorry! you could not clear the test");
+//     }
+//   } else {
+//     console.log("You are not physically fit!");
+//   }
+// } else {
+//   console.log("Tata! you are not eligible");
+// }
+
+//! switch
+//? switch is a conditional statement and helps to display the outputs or execute the code based on cases. it compares the cases and the value passed as restricted equals to.
+
+// let day = "true";
+
+// switch (day) {
+//   case "mon":
+//     console.log("Today is Monday");
+//     break;
+//   case "tue":
+//     console.log("Today is Tuesday");
+//     break;
+//   case "wed":
+//     console.log("Today is Wednesday");
+//     break;
+//   case "thu":
+//     console.log("Today is Thursday");
+//     break;
+//   case "fri":
+//     console.log("Today is Friday");
+//     break;
+//   case "sat":
+//     console.log("Today is Saturday");
+//     break;
+//   case "sun":
+//     console.log("Today is Sunday");
+//     break;
+//   default:
+//     console.log("Invalid day code");
+// }
+
+console.log(1 == "1");
+console.log(1 === "1");
+
+// let user = 1;
+// switch (user) {
+//   case "1":
+//     console.log("User 1 is logged In! Unrestricted comparison");
+//     break;
+//   case 1:
+//     console.log("Restricted comparison");
+//     break;
+//   default:
+//     console.log("Invalid data");
+// }
+
+// let num1 = 10;
+// let num2 = 8;
+
+// let operator = "+";
+
+// switch (operator) {
+//   case "+":
+//     console.log("The sum of specified numbsers is: ", num1 + num2);
+// }
+
+//! ternary Operator
+let units = 390;
+let cost = 0;
+
+// if (units > 0 && units < 200) {
+//   cost = units * 3;
+// } else if (units > 200 && units <= 300) {
+//   cost = 600 + (units % 200) * 5;
+// } else if (units > 300 && units <= 400) {
+//   cost = 600 + 500 + (units % 300) * 7;
+// } else if (units > 400) {
+//   cost = 600 + 500 + 700 + (units % 400) * 9;
+// }
+
+// units > 0 && units <= 200
+//   ? (cost = units * 3)
+//   : units > 200 && units <= 300
+//     ? (cost = 600 + (units % 200) * 5)
+//     : units > 300 && units <= 400
+//       ? (cost = 600 + 500 + (units % 300) * 7)
+//       : units > 400
+//         ? (cost = 600 + 500 + 700 + (units % 400) * 9)
+//         : console.log("Invalid Units");
+
+// console.log(cost);
+
+let isLoggedIn = true;
+if (isLoggedIn == true) {
+  console.log("user is logged in");
 } else {
-  console.log("Tata! you are not eligible");
+  console.log("User is not logged in");
 }
+
+//! syntax
+// condition ? true statement : false statement
+isLoggedIn
+  ? console.log("User is logged in")
+  : console.log("User is not logged in");
