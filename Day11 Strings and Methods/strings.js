@@ -48,14 +48,71 @@
 // console.log(str);
 
 //! endsWith
-let str = "Shanu";
-let res = str.endsWith("u");
-console.log(res);
+// let str = "Shanu";
+// let res = str.endsWith("u");
+// console.log(res);
 
 //! startsWith
-res = str.startsWith("s");
-console.log(res);
+// res = str.startsWith("s");
+// console.log(res);
 
 //! includes
-res = str.includes("h");
-console.log(res);
+// res = str.includes("h");
+// console.log(res);
+
+//! indexOf
+// let str = "Kalees";
+// let res = str.indexOf("e");
+// console.log(res);
+
+//! lastIndexOf
+// res = str.lastIndexOf("e");
+// console.log(res);
+
+// res = str.lastIndexOf("z");
+// console.log(res);
+
+//! padEnd and padStart
+// res = str.padEnd();
+
+//! slice, substring and substr -> Extraction of the part of the string
+// let username = "Amarjeet Singh";
+//? slice(startIndex, lastIndex) lastIndex is lastIndex-1
+// let res2 = username.slice(4);
+// console.log(res2);
+// res2 = username.slice(4, 10);
+// console.log(res2);
+// res2 = username.slice(-4);
+// console.log(res2);
+// res2 = username.slice(-6, -1); // (-6, -2)
+// console.log(res2);
+
+//! substring
+// let res3 = username.substring(4);
+// console.log(res3);
+
+// res3 = username.substring(-4); // negative index will be considered as zero
+// console.log(res3);
+// res3 = username.substring(5, 9); // (5, 8)
+// console.log(res3);
+// res3 = username.substring(5, -9); //(5, 0) -> (0, 5) -> (0,4)
+// console.log(res3);
+
+//! substr
+// let res4 = username.substr(5, 5);
+// console.log(res4);
+
+let username = "Shanu Singh";
+let dob = "22-02-2022";
+let contact = "1234567890";
+
+let generatePassword = (username, dob, contact) => {
+  let password =
+    username.slice(0, username.indexOf(" ")) +
+    dob.slice(-4) +
+    "@" +
+    contact.slice(-3);
+  console.log(password);
+};
+
+generatePassword(username, dob, contact);
