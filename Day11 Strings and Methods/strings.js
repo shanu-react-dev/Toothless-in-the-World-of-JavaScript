@@ -102,17 +102,66 @@
 // let res4 = username.substr(5, 5);
 // console.log(res4);
 
-let username = "Shanu Singh";
-let dob = "22-02-2022";
-let contact = "1234567890";
+// let username = "Shanu Singh";
+// let dob = "22-02-2022";
+// let contact = "1234567890";
 
-let generatePassword = (username, dob, contact) => {
-  let password =
-    username.slice(0, username.indexOf(" ")) +
-    dob.slice(-4) +
-    "@" +
-    contact.slice(-3);
-  console.log(password);
-};
+// let generatePassword = (username, dob, contact) => {
+//   let password =
+//     username.slice(0, username.indexOf(" ")) +
+//     dob.slice(-4) +
+//     "@" +
+//     contact.slice(-3);
+//   console.log(password);
+// };
 
-generatePassword(username, dob, contact);
+// generatePassword(username, dob, contact);
+
+//! padEnd and padStart => XXXXXXX192, 5354 XXXX 1912
+// let contact = 1234567890;
+// let paddedContact = contact.toString().slice(-3); // 890
+// console.log(paddedContact);
+// paddedContact = paddedContact.padStart(10, "X"); // XXXXXXX890
+// console.log(paddedContact);
+// let paddedContact = contact.toString().slice(-3).padStart(10, "X");
+// console.log(paddedContact);
+
+// paddedContact = contact.toString().slice(0, 3).padEnd(10, "X");
+// console.log(paddedContact);
+
+// let aadhaarNo = "1234 5678 9012";
+// let firstFour = aadhaarNo.slice(0, 5);
+// let lastFour = aadhaarNo.slice(-5);
+// let maskedAadhaar = firstFour.padEnd(9, "X") + lastFour;
+// console.log(maskedAadhaar);
+
+//! replace and replaceAll
+let userName = "Amrendra Bahubali";
+let res = userName.replace("a", "z");
+console.log(res);
+res = userName.replaceAll("a", "z");
+console.log(res);
+
+res = userName.toLocaleLowerCase();
+console.log(res);
+res = userName.toLocaleUpperCase();
+console.log(res);
+res = userName.toUpperCase();
+console.log(res);
+res = userName.toLowerCase();
+console.log(res);
+
+res = userName.split();
+console.log(res);
+res = userName.split("");
+console.log(res);
+res = userName.split(" ");
+console.log(res);
+res = userName.split("", 8);
+console.log(res);
+
+let dabba = "         Shanu               ";
+console.log(dabba);
+console.log(dabba.trim());
+console.log(dabba.trimEnd());
+console.log(dabba.trimStart());
